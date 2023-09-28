@@ -19,7 +19,6 @@ body{
 
 .services .heading{
     text-align: center;
-    margin-bottom: 1%;
     padding-top: 100px;
     margin: 0 5%;
 }
@@ -53,7 +52,7 @@ body{
 
 .card:hover{
     background-color: #ffc400;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: .3s ease;
 }
 
@@ -112,7 +111,7 @@ body{
 
     .services .container .card {
         width: 325px; /* Keep the fixed width */
-        margin-top: 4%; /* Adjust margin as needed */
+        margin-top: 6%; /* Adjust margin as needed */
     }
     .other-services .container-box{
         grid-template-columns: repeat(2, 1fr);
