@@ -56,21 +56,17 @@ body{
     bottom: 20%;
 }
 
-.home .scroll-btn a button {
-    background-color: #fff;
-    color: #000;
-    padding: 10px 15px;
-    font-size: 18px;
-    font-weight: bold;
-    border: 1px;
-    border-radius: 10px;
+.home .scroll-btn a i {
+    color: #fff;
+    font-size: 100px;
+    transition: 0.3s ease;
     cursor: pointer;
     text-decoration: none;
 }
 
-.home .scroll-btn a button:hover {
-    background-color: #ffc400;
-    color: #000;
+.home .scroll-btn a i:hover {
+    color: #ffc400;
     transition: 0.3s ease;
+    font-size: 120px;
     transform:scaleX(1.2)
 }
