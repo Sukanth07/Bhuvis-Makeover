@@ -16,7 +16,7 @@ body{
 
 .home{
     min-height: 100vh;
-    background-image: url("../images/background.jpg");
+    background-image: url("images/background.jpg");
     background-size: cover;
     background-color: rgba(15, 12, 12, 0.637);
     background-blend-mode: multiply;
