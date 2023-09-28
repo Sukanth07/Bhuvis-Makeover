@@ -11,3 +11,190 @@ body{
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
+
+.contact{
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.contact .heading{
+    text-align: center;
+    margin-bottom: 1%;
+    padding-top: 100px;
+}
+.contact .heading span{
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffc400;
+    border-bottom: #fff 10px solid;
+}
+
+.contact .container-contact{
+    margin: 5% 10%;
+}
+
+.container-contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Split into two columns */
+    grid-gap: 20px; /* Adjust the gap between grids as needed */
+    margin: 0 10%;
+}
+
+.container-contact .address, .container-contact .links {
+    background-color: rgba(55, 55, 55, 0.784);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.container-contact .links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container-contact .links ul li {
+    margin: 15px 0;
+}
+
+/* Adjust styling as needed for headings and links */
+.container-contact h2 {
+    font-size: 50px;
+    color: #ffc400;
+}
+
+.container-contact a {
+    text-decoration: none;
+    color: #fff; /* Adjust link color as needed */
+    font-size: 20px;
+}
+
+
+.container-contact .icon{
+    color: red;
+    padding-right: 10px;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.container-contact p{
+    padding-left: 60px;
+    font-size: 20px;
+}
+
+.insta{
+    font-size: 30px;
+    padding-right: 15px;
+    color: rgb(190, 0, 200);
+}
+
+.fb{
+    font-size: 30px;
+    padding-right: 15px;
+    color: cornflowerblue;
+}
+
+.links a{
+    display: flex;
+    align-items: center;
+    transition: .3s ease;
+}
+
+.address h2{
+    display: flex;
+    align-items:start;
+}
+
+.links a:hover{
+    font-size: 25px;
+    transition: .3s ease;
+}
+
+.links .book-now button{
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 3%;
+    background-color: transparent;
+    border: 3px solid rgba(229, 44, 226, 0.4);
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    transition: .3s ease;
+}
+
+.links .book-now button:hover{
+    background-color: rgba(229, 44, 226, 0.4);
+    border: 3px solid transparent;
+    color: white;
+    transition: .3s ease;
+}
+
+.links span{
+    font-size: 14px;
+}
+
+.map-container {
+    width: 80%; /* Adjust as needed to control the map's width */
+    margin: 0 10% 8% 10%; /* Center the map horizontally */
+    padding: 0 ; /* Add left and right margins */
+    height: 20%;
+}
+
+/* Make the iframe responsive */
+.map-container iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%; /* Ensure the iframe doesn't exceed its container's width */
+    max-height: 20%; /* Automatically adjust the height to maintain the aspect ratio */
+}
+
+footer{
+    bottom: 0;
+    background-color: rgba(55, 55, 55, 0.784);
+    height: 10%;
+    width: 100%;
+    color: rgba(55, 55, 55, 0.784);
+    font-size: 10px;
+}
+
+
+@media (max-width: 1183px){
+    .container-contact{
+        display: block;
+    }
+    .container-contact .links{
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 536px){
+    .container-contact .address h2{
+        font-size: 30px;
+    }
+    .container-contact .icon{
+        font-size: 30px;
+    }
+    .container-contact .address p{
+        font-size: 14px;
+        padding-left: 40px;
+    }
+    .contact .heading span{
+        font-size: 45px;
+    }
+    .container-contact{
+        padding-top: 30px;
+    }
+    .map-container iframe{
+        max-height: 15%;
+    }
+}
+
+@media (max-width: 370px){
+    .container-contact .address p{
+        padding-left: 0;
+    }
+    .links .book-now button{
+        font-size: 25px;
+    }
+
+}

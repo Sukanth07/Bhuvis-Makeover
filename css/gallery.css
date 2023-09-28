@@ -50,6 +50,8 @@ body{
 }
 .gallery-section .container .gallery img{
     width: 100%;
+    transition: .5s ease;
+    
 }
 .gallery-section .container .gallery a img:hover{
     transform: scale(1.1);

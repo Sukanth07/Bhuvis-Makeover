@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Poppins&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,3 +10,137 @@ body{
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
+
+.services{
+    /* min-height: 100vh; */
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.services .heading{
+    text-align: center;
+    margin-bottom: 1%;
+    padding-top: 100px;
+    margin: 0 5%;
+}
+.services .heading span{
+    font-family: Fuggles;
+    font-size: 110px;
+    font-weight: 900;
+    color: #000;
+    border-bottom: rebeccapurple 5px solid;
+}
+
+.services .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 10% 5% 10%;
+    padding-top: 5%;
+
+}
+
+.card{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 4%;
+    height: 350px;
+    transition: .3s ease;
+}
+
+.card:hover{
+    background-color: #ffc400;
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+
+.card img{
+    width: inherit;
+    height: 80%;
+}
+
+.card .card-title{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.other-services .heading-1{
+    text-align: center;
+    margin-bottom: 1%;
+    padding-top: 80px;
+}
+.other-services .heading-1 span{
+    font-size: 60px;
+    font-weight: bold;
+    color: #000;
+    border-bottom: #ffc400 10px solid;
+}
+
+.other-services .container-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px; /* Adjust the gap between cards as needed */
+    justify-content: center; /* Center-align the cards horizontally */
+    margin: 2% 10% 5% 10%;
+}
+.other-services .container-box .box{
+    border: solid 3px rgb(107, 0, 106, 0.4);
+    margin-top: 10%;
+    border-radius: 4px;
+}
+.other-services .container-box .box:hover{
+    background-color: rgb(107, 0, 106, 0.4);
+    transition: .3s ease;
+    border: none;
+}
+
+
+.other-services .container-box .box h1{
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1330px) {
+    .services .container {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center-align the cards horizontally */
+    }
+
+    .services .container .card {
+        width: 325px; /* Keep the fixed width */
+        margin-top: 4%; /* Adjust margin as needed */
+    }
+    .other-services .container-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 460px){
+    .services .container .card{
+        width: 250px;
+    }
+    .services .heading span{
+        font-size: 60px;
+    }
+    .services .container{
+        padding-top: 5%;
+    }
+
+}
+
+@media (max-width: 600px){
+    .other-services .container-box{
+        grid-template-columns:minmax(100px, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .other-services .heading-1 span{
+        font-size: 30px;
+    }
+}
+
