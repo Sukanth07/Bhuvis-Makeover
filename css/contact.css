@@ -79,7 +79,7 @@ body{
 
 .container-contact p{
     padding-left: 60px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .insta{
@@ -176,7 +176,7 @@ footer{
     }
     .container-contact .address p{
         font-size: 14px;
-        padding-left: 40px;
+        padding-left: 0px;
     }
     .contact .heading span{
         font-size: 45px;
