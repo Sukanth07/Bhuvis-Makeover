@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------------------------------------- HOME --------------------------------------------- */
+
+.home{
+    min-height: 100vh;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-color: rgba(15, 12, 12, 0.637);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .title {
+    text-align: center;
+}
+
+.home .title h1{
+    color: #fff;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 65px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.home .title hr{
+    margin: 5px 0 15px 0;
+}
+
+.home .title .sub-title{
+    color: #fff;
+    font-family: 'Moneserrat', sans-serif;
+    font-size: 35px;
+    font-weight:lighter;
+    letter-spacing: 2px;
+}
+
+.home .scroll-btn{
+    position: absolute;
+    bottom: 20%;
+}
+
+.home .scroll-btn a button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home .scroll-btn a button:hover {
+    background-color: #ffc400;
+    color: #000;
+    transition: 0.3s ease;
+    transform:scaleX(1.2)
+}
