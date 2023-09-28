@@ -28,7 +28,7 @@ body{
 .about .container{
     display:flex;
     align-items: center;
-    margin: 0 10% 0 10%;
+    margin: 0 10% 3% 10%;
     padding-top: 3%;
 }
 .about .container .about-img img{
@@ -45,4 +45,5 @@ body{
     font-size: 17px; 
     text-align: justify;
     margin-left: 5%;
+    line-height: 30px;
 }
