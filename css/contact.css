@@ -167,6 +167,16 @@ footer{
     }
 }
 
+@media (max-width: 768px){
+    .contact .container-contact{
+        margin: 5% 5%;
+    }
+    .map-container{
+        margin: 0 5% 10% 5%;
+        width: 90%;
+    }
+}
+
 @media (max-width: 536px){
     .container-contact .address h2{
         font-size: 30px;
