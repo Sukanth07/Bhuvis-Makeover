@@ -153,7 +153,7 @@ footer{
     background-color: rgba(55, 55, 55, 0.784);
     height: 10%;
     width: 100%;
-    color: rgba(55, 55, 55, 0.784);
+    color: transparent;
     font-size: 10px;
 }
 
